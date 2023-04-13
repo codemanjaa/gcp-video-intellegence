@@ -1,3 +1,4 @@
+require("dotenv").config();
 const fs = require('fs');
 const util = require('util');
 
@@ -19,7 +20,7 @@ var labelVideo = function (label, index) {
 // Creates a client
 const storage = new Storage();
 
-var gcsFile = 'gs://video-intelligence/example-short.mp4';
+var gcsFile = 'gs://manja-video-intelligence/demo-room.mov';
 var frags = gcsFile.match(/[^\/]+/gi);
 
 (async function () {
